@@ -65,7 +65,7 @@ public class AuthServerOAuth2Config extends AuthorizationServerConfigurerAdapter
                .scopes("read")
                .autoApprove(true)
                .and()
-               .withClient("clientIdPassword")
+               .withClient("clientIdPassword").resourceIds("RestSecureOath")
                .secret("secret")
                .authorizedGrantTypes(
                  "password","authorization_code", "refresh_token")
