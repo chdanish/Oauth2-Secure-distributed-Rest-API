@@ -3,7 +3,7 @@ Oauth2 Security for distributed Rest API
 
 Run "RestOauthServer" as spring boot application and give following command:
 
-curl -F grant_type=password -F username=john -F password=123 -X POST http://localhost:8080/oauth/token -u clientIdPassword:secret
+# curl -F grant_type=password -F username=john -F password=123 -X POST http://localhost:8080/oauth/token -u clientIdPassword:secret
 
 in response you will see following output:
 
@@ -18,7 +18,7 @@ in response you will see following output:
 
 Now run "RestSecureOauth" as spring boot application and give following command:
 
-curl -v http://localhost:8998/api/resource -H  'Authorization: Bearer <token>'
+# curl -v http://localhost:8998/api/resource -H  'Authorization: Bearer <token>'
 
 where "<token>" will be replaced by "access_token" recieved in JSON response from "RestOauthServer" Like below:
 
