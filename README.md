@@ -27,3 +27,8 @@ curl -v http://localhost:8998/api/resource -H  'Authorization: Bearer eyJhbGciOi
 
 # Applications are drived from http://www.baeldung.com/rest-api-spring-oauth2-angularjs
 
+I have also added a login controller to resource app incase someone dont want share client credentials with users.You can make following command to generate to token:
+
+# curl  -v http://localhost:8998/login -H 'Content-Type: application/json; charset=UTF-8' --data-binary '{"username":"john","password":"123"}'
+
+
